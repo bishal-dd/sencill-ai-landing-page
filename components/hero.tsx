@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Sparkles, Zap } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Sparkles, Zap } from "lucide-react";
 
 export function Hero() {
   return (
@@ -12,12 +12,14 @@ export function Hero() {
           </div>
 
           <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Launch Your Professional Website in <span className="text-primary">Minutes</span>
+            Launch Your Professional Website in{" "}
+            <span className="text-primary">Minutes</span>
           </h1>
 
           <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-            sencill AI creates stunning, fully-functional websites for travel agencies, hotels, and businesses. No
-            coding required. Just describe your vision, and watch it come to life.
+            Sencill AI creates stunning, fully-functional websites for travel
+            agencies, hotels, and businesses. No coding required. Just describe
+            your vision, and watch it come to life.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -28,22 +30,33 @@ export function Hero() {
               <Zap className="mr-2 h-5 w-5" />
               Get Started Free
             </Button>
-            <Button size="lg" variant="outline" className="text-base font-semibold px-8 bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-base font-semibold px-8 bg-transparent"
+            >
               View Examples
             </Button>
           </div>
 
           <div className="mt-12 text-sm text-muted-foreground">
-            <p>✨ No credit card required • 🚀 Deploy in seconds • 💎 Professional templates</p>
+            <p>
+              ✨ No credit card required • 🚀 Deploy in seconds • 💎
+              Professional templates
+            </p>
           </div>
         </div>
 
         <div className="mt-16 mx-auto max-w-5xl">
           <div className="relative rounded-lg border-2 border-primary/20 bg-card p-2 shadow-2xl">
-            <img src="/modern-website-dashboard-showing-travel-agency-and.jpg" alt="sencill AI Dashboard" className="rounded-md w-full" />
+            <img
+              src="/modern-website-dashboard-showing-travel-agency-and.jpg"
+              alt="Sencill AI Dashboard"
+              className="rounded-md w-full"
+            />
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

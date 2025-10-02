@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -6,9 +6,12 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-4">sencill AI</h3>
+            <h3 className="text-xl font-bold text-foreground mb-4">
+              Sencill AI
+            </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Create stunning websites in minutes with the power of AI. No coding required.
+              Create stunning websites in minutes with the power of AI. No
+              coding required.
             </p>
           </div>
 
@@ -67,16 +70,28 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -84,9 +99,9 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 sencill AI. All rights reserved.</p>
+          <p>&copy; 2025 Sencill AI. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

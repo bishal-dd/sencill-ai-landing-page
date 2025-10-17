@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, Zap } from "lucide-react";
+import { Dock, Sparkles, Zap } from "lucide-react";
+import { HeroVideoDialogDemo } from "./HeroVideo";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -23,7 +25,7 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button
+            {/*<Button
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold px-8"
             >
@@ -36,24 +38,27 @@ export function Hero() {
               className="text-base font-semibold px-8 bg-transparent"
             >
               View Examples
+            </Button>*/}
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold px-8"
+              asChild
+            >
+              <Link href="/early-access">
+                <Dock className="mr-2 h-5 w-5" />
+                Apply For Early Access
+              </Link>
             </Button>
           </div>
 
           <div className="mt-12 text-sm text-muted-foreground">
-            <p>
-              ✨ No credit card required • 🚀 Deploy in seconds • 💎
-              Professional templates
-            </p>
+            <p> • 🚀 Deploy in seconds • 💎 Professional Webistes</p>
           </div>
         </div>
 
         <div className="mt-16 mx-auto max-w-5xl">
           <div className="relative rounded-lg border-2 border-primary/20 bg-card p-2 shadow-2xl">
-            <img
-              src="/modern-website-dashboard-showing-travel-agency-and.jpg"
-              alt="Sencill AI Dashboard"
-              className="rounded-md w-full"
-            />
+            <HeroVideoDialogDemo />
           </div>
         </div>
       </div>

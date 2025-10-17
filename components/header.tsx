@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export function Header() {
@@ -13,31 +15,38 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Sencill AI</span>
+            <Link href="/">
+              <Image
+                src="/Sencill_AI_logo.png"
+                alt="Sencill AI Logo"
+                width={200}
+                height={200}
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#features"
+              href="/#features"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Features
             </a>
             <a
-              href="#how-it-works"
+              href="/#how-it-works"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               How It Works
             </a>
-            <a
+            {/*<a
               href="#testimonials"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Testimonials
-            </a>
+            </a>*/}
             <a
-              href="#pricing"
+              href="/#pricing"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Pricing
@@ -46,9 +55,12 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Get Started
+            {/*<Button variant="ghost">Sign In</Button>*/}
+            <Button
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              asChild
+            >
+              <Link href={"/early-access"}>Early Access</Link>
             </Button>
           </div>
 

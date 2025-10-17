@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Music2 } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,29 +19,25 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a
+                  href="#features"
+                  className="hover:text-foreground transition-colors"
+                >
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Templates
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a
+                  href="#pricing"
+                  className="hover:text-foreground transition-colors"
+                >
                   Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Examples
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
+          {/*<div>
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
@@ -65,41 +61,35 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div>*/}
 
           <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/lightwebx"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@lwx_real"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Twitter className="h-5 w-5" />
+                <Music2 className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lightwebx/"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 Sencill AI. All rights reserved.</p>
+          <p>&copy; 2025 Light WebX Private Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>

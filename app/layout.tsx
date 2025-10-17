@@ -9,7 +9,9 @@ export const metadata: Metadata = {
   title: "Sencill AI - Launch Your Professional Website in Minutes",
   description:
     "Create stunning, fully-functional websites for travel agencies, hotels, and businesses with AI. No coding required.",
-  generator: "v0.app",
+  icons: {
+    icon: "/Sencill_favicon.png",
+  },
 };
 
 export default function RootLayout({

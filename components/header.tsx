@@ -27,30 +27,30 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a
+            <Link
               href="/#features"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Features
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#how-it-works"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               How It Works
-            </a>
+            </Link>
             {/*<a
               href="#testimonials"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Testimonials
             </a>*/}
-            <a
+            <Link
               href="/#pricing"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Pricing
-            </a>
+            </Link>
           </div>
 
           {/* CTA Buttons */}

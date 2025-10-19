@@ -82,41 +82,47 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <a
+              <Link
                 href="#features"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#how-it-works"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
-              </a>
-              <a
+              </Link>
+              {/*<Link
                 href="#testimonials"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
-              </a>
-              <a
+              </Link>*/}
+              <Link
                 href="#pricing"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
-              </a>
+              </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="w-full">
+                <Button
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
+                  asChild
+                >
+                  <Link href={"/early-access"}>Early Access</Link>
+                </Button>
+                {/*<Button variant="ghost" className="w-full">
                   Sign In
                 </Button>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                   Get Started
-                </Button>
+                </Button>*/}
               </div>
             </div>
           </div>

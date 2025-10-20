@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import {
   Form,
   FormControl,
@@ -13,54 +13,55 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { toast } from "sonner";
-import { Loader2, CheckCircle2 } from "lucide-react";
+} from '@/components/ui/form'
+import { toast } from 'sonner'
+import { Loader2, CheckCircle2 } from 'lucide-react'
 
 const formSchema = z.object({
-  email: z.string().email({ message: "Please enter a valid email address" }),
-});
+  email: z.string().email({ message: 'Please enter a valid email address' }),
+})
 
-type FormData = z.infer<typeof formSchema>;
+type FormData = z.infer<typeof formSchema>
 
 export function EarlyAccessForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false)
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
-  });
+  })
 
   async function onSubmit(data: FormData) {
-    setIsSubmitting(true);
+    setIsSubmitting(true)
 
     try {
-      const response = await fetch("/api/early-access", {
-        method: "POST",
+      const response = await fetch('/api/early-access', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-      });
+      })
 
       if (!response.ok) {
-        throw new Error("Failed to submit");
+        throw new Error('Failed to submit')
       }
 
-      setIsSuccess(true);
-      toast.success("Welcome aboard!", {
-        description: "Check your email for next steps.",
-      });
-      form.reset();
+      setIsSuccess(true)
+      toast.success('Welcome aboard!', {
+        description: 'Check your email for next steps.',
+      })
+      form.reset()
     } catch (error) {
-      toast.error("Something went wrong", {
-        description: "Please try again later.",
-      });
+      toast.error('Something went wrong', {
+        description: 'Please try again later.',
+      })
+      throw error
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
   }
 
@@ -68,15 +69,12 @@ export function EarlyAccessForm() {
     return (
       <div className="rounded-lg border-2 border-primary/20 bg-card p-8 text-center">
         <CheckCircle2 className="h-16 w-16 text-primary mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-foreground mb-2">
-          You're on the list!
-        </h3>
+        <h3 className="text-2xl font-bold text-foreground mb-2">You&apos;re on the list!</h3>
         <p className="text-muted-foreground">
-          We'll send you an email with early access details soon. Keep an eye on
-          your inbox!
+          We&apos;ll send you an email with early access details soon. Keep an eye on your inbox!
         </p>
       </div>
-    );
+    )
   }
 
   return (
@@ -115,16 +113,15 @@ export function EarlyAccessForm() {
                 Submitting...
               </>
             ) : (
-              "Request Early Access"
+              'Request Early Access'
             )}
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">
-            By signing up, you agree to receive updates about sencill AI.
-            Unsubscribe anytime.
+            By signing up, you agree to receive updates about sencill AI. Unsubscribe anytime.
           </p>
         </form>
       </Form>
     </div>
-  );
+  )
 }

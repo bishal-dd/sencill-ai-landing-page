@@ -1,56 +1,43 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Palette,
-  Rocket,
-  Smartphone,
-  Code2,
-  Globe,
-  Shield,
-} from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Palette, Rocket, Smartphone, Code2, Globe, Shield } from 'lucide-react'
 
 const features = [
   {
     icon: Palette,
-    title: "Customizable Websites",
-    description: "Customize your website with your own content",
+    title: 'Customizable Websites',
+    description: 'Customize your website with your own content',
   },
   {
     icon: Rocket,
-    title: "Lightning Fast Setup",
+    title: 'Lightning Fast Setup',
     description:
-      "Generate a complete website in minutes. Our AI understands your needs and creates the perfect site instantly.",
+      'Generate a complete website in minutes. Our AI understands your needs and creates the perfect site instantly.',
   },
   {
     icon: Smartphone,
-    title: "Mobile Responsive",
+    title: 'Mobile Responsive',
     description:
-      "Every website is fully responsive and looks stunning on all devices, from phones to desktops.",
+      'Every website is fully responsive and looks stunning on all devices, from phones to desktops.',
   },
   {
     icon: Code2,
-    title: "No Coding Required",
+    title: 'No Coding Required',
     description:
-      "Build professional websites without writing a single line of code. Perfect for non-technical users.",
+      'Build professional websites without writing a single line of code. Perfect for non-technical users.',
   },
   {
     icon: Globe,
-    title: "SEO Optimized",
+    title: 'SEO Optimized',
     description:
-      "All websites are built with SEO best practices, helping you rank higher in search results.",
+      'All websites are built with SEO best practices, helping you rank higher in search results.',
   },
   {
     icon: Shield,
-    title: "Secure & Reliable",
+    title: 'Secure & Reliable',
     description:
-      "Enterprise-grade security and 90% uptime guarantee. Your website is always safe and accessible.",
+      'Enterprise-grade security and 90% uptime guarantee. Your website is always safe and accessible.',
   },
-];
+]
 
 export function Features() {
   return (
@@ -61,17 +48,13 @@ export function Features() {
             Everything You Need to Succeed Online
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed">
-            Powerful features designed to help your business grow and thrive in
-            the digital world.
+            Powerful features designed to help your business grow and thrive in the digital world.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <Card
-              key={index}
-              className="border-border bg-card hover:shadow-lg transition-shadow"
-            >
+            <Card key={index} className="border-border bg-card hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                   <feature.icon className="h-6 w-6 text-primary" />
@@ -88,5 +71,5 @@ export function Features() {
         </div>
       </div>
     </section>
-  );
+  )
 }

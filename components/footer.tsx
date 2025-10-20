@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, Music2 } from "lucide-react";
+import { Facebook, Instagram, Music2 } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -6,12 +6,9 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              Sencill AI
-            </h3>
+            <h3 className="text-xl font-bold text-foreground mb-4">Sencill AI</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Create stunning websites in minutes with the power of AI. No
-              coding required.
+              Create stunning websites in minutes with the power of AI. No coding required.
             </p>
           </div>
 
@@ -19,18 +16,12 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a
-                  href="#features"
-                  className="hover:text-foreground transition-colors"
-                >
+                <a href="#features" className="hover:text-foreground transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a
-                  href="#pricing"
-                  className="hover:text-foreground transition-colors"
-                >
+                <a href="#pricing" className="hover:text-foreground transition-colors">
                   Pricing
                 </a>
               </li>
@@ -93,5 +84,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

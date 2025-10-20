@@ -1,23 +1,23 @@
-import type React from "react";
-import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
-import "./globals.css";
-import { Suspense } from "react";
+import type React from 'react'
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import './globals.css'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
-  title: "Sencill AI - Launch Your Professional Website in Minutes",
+  title: 'Sencill AI - Launch Your Professional Website in Minutes',
   description:
-    "Create stunning, fully-functional websites for travel agencies, hotels, and businesses with AI. No coding required.",
+    'Create stunning, fully-functional websites for travel agencies, hotels, and businesses with AI. No coding required.',
   icons: {
-    icon: "/Sencill_favicon.png",
+    icon: '/Sencill_favicon.png',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -25,5 +25,5 @@ export default function RootLayout({
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
       </body>
     </html>
-  );
+  )
 }

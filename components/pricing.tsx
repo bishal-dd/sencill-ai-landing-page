@@ -1,43 +1,42 @@
-import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Check } from 'lucide-react'
+import { Card } from '@/components/ui/card'
 
 export function Pricing() {
   const costs = [
     {
-      name: "Website Generation",
-      price: "Nu. 7,000",
-      period: "one-time",
-      description: "Professional website development tailored to your business",
+      name: 'Website Generation',
+      price: 'Nu. 7,000',
+      period: 'one-time',
+      description: 'Professional website development tailored to your business',
       features: [
-        "Custom website design",
-        "Mobile responsive layout",
-        "SEO optimized",
-        "SSL certificate setup",
+        'Custom website design',
+        'Mobile responsive layout',
+        'SEO optimized',
+        'SSL certificate setup',
       ],
     },
     {
-      name: "Domain",
-      price: "Nu. 1,500",
-      period: "year",
-      description: "Your unique web address",
-      features: ["Custom domain name", "Domain registration", "DNS management"],
+      name: 'Domain',
+      price: 'Nu. 1,500',
+      period: 'year',
+      description: 'Your unique web address',
+      features: ['Custom domain name', 'Domain registration', 'DNS management'],
     },
     {
-      name: "Hosting",
-      price: "Nu. 3,000",
-      period: "year",
-      description: "Reliable and secure hosting",
+      name: 'Hosting',
+      price: 'Nu. 3,000',
+      period: 'year',
+      description: 'Reliable and secure hosting',
       features: [
-        "90% uptime guarantee",
-        "Fast loading speeds",
-        "Regular backups",
-        "Security monitoring",
-        "Technical support",
-        "Free SSL certificate",
+        '90% uptime guarantee',
+        'Fast loading speeds',
+        'Regular backups',
+        'Security monitoring',
+        'Technical support',
+        'Free SSL certificate',
       ],
     },
-  ];
+  ]
 
   return (
     <section id="pricing" className="py-24   bg-[#FCFCFC]">
@@ -47,9 +46,8 @@ export function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            One-time development cost with affordable annual fees. No hidden
-            charges. It is subject to change based on the type of website and
-            its complexity.
+            One-time development cost with affordable annual fees. No hidden charges. It is subject
+            to change based on the type of website and its complexity.
           </p>
         </div>
 
@@ -57,7 +55,7 @@ export function Pricing() {
           {costs.map((cost, index) => (
             <Card
               key={cost.name}
-              className={`relative p-8 ${index === 0 ? "border-primary shadow-lg md:scale-105" : "border-border"}`}
+              className={`relative p-8 ${index === 0 ? 'border-primary shadow-lg md:scale-105' : 'border-border'}`}
             >
               {index === 0 && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
@@ -67,14 +65,10 @@ export function Pricing() {
 
               <div className="mb-6">
                 <h3 className="text-2xl font-bold mb-2">{cost.name}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {cost.description}
-                </p>
+                <p className="text-muted-foreground text-sm mb-4">{cost.description}</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-bold">{cost.price}</span>
-                  <span className="text-muted-foreground text-sm">
-                    /{cost.period}
-                  </span>
+                  <span className="text-muted-foreground text-sm">/{cost.period}</span>
                 </div>
               </div>
 
@@ -94,9 +88,7 @@ export function Pricing() {
           <div className="inline-block bg-muted px-6 py-4 rounded-lg">
             <p className="text-lg font-semibold mb-2">Total First Year Cost</p>
             <p className="text-3xl font-bold text-primary">Nu. 11,500</p>
-            <p className="text-sm text-muted-foreground mt-1">
-              Development + Domain + Hosting
-            </p>
+            <p className="text-sm text-muted-foreground mt-1">Development + Domain + Hosting</p>
           </div>
           <p className="text-muted-foreground">
             Renewal cost: Nu. 4,500/year (Domain + Hosting only)
@@ -107,5 +99,5 @@ export function Pricing() {
         </div>
       </div>
     </section>
-  );
+  )
 }

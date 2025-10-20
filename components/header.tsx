@@ -1,13 +1,13 @@
-"use client";
+'use client'
 
-import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { Button } from '@/components/ui/button'
+import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
@@ -16,12 +16,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <Image
-                src="/Sencill_AI_logo.png"
-                alt="Sencill AI Logo"
-                width={200}
-                height={200}
-              />
+              <Image src="/Sencill_AI_logo.png" alt="Sencill AI Logo" width={200} height={200} />
             </Link>
           </div>
 
@@ -56,11 +51,8 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             {/*<Button variant="ghost">Sign In</Button>*/}
-            <Button
-              className="bg-primary text-primary-foreground hover:bg-primary/90"
-              asChild
-            >
-              <Link href={"/early-access"}>Early Access</Link>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Link href={'/early-access'}>Early Access</Link>
             </Button>
           </div>
 
@@ -70,11 +62,7 @@ export function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
@@ -115,7 +103,7 @@ export function Header() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                   asChild
                 >
-                  <Link href={"/early-access"}>Early Access</Link>
+                  <Link href={'/early-access'}>Early Access</Link>
                 </Button>
                 {/*<Button variant="ghost" className="w-full">
                   Sign In
@@ -129,5 +117,5 @@ export function Header() {
         )}
       </div>
     </nav>
-  );
+  )
 }

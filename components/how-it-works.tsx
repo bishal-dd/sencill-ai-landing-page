@@ -1,25 +1,25 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react'
 
 const steps = [
   {
-    number: "01",
-    title: "Describe Your Vision",
+    number: '01',
+    title: 'Describe Your Vision',
     description:
-      "Tell us about your business, your style preferences, and what you want your website to achieve.",
+      'Tell us about your business, your style preferences, and what you want your website to achieve.',
   },
   {
-    number: "02",
-    title: "AI Generates Your Site",
+    number: '02',
+    title: 'AI Generates Your Site',
     description:
-      "Our advanced AI creates a fully-functional, beautiful website tailored to your specific needs.",
+      'Our advanced AI creates a fully-functional, beautiful website tailored to your specific needs.',
   },
   {
-    number: "03",
-    title: "Customize & Launch",
+    number: '03',
+    title: 'Customize & Launch',
     description:
       "Make any final tweaks you want, then publish your site with a single click. It's that simple.",
   },
-];
+]
 
 export function HowItWorks() {
   return (
@@ -30,8 +30,7 @@ export function HowItWorks() {
             From Idea to Live Website in 3 Simple Steps
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed">
-            Our streamlined process makes website creation effortless and
-            enjoyable.
+            Our streamlined process makes website creation effortless and enjoyable.
           </p>
         </div>
 
@@ -43,9 +42,7 @@ export function HowItWorks() {
                   <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
                     {step.number}
                   </div>
-                  <h3 className="mb-3 text-xl font-bold text-foreground">
-                    {step.title}
-                  </h3>
+                  <h3 className="mb-3 text-xl font-bold text-foreground">{step.title}</h3>
                   <p className="text-pretty text-muted-foreground leading-relaxed">
                     {step.description}
                   </p>
@@ -62,5 +59,5 @@ export function HowItWorks() {
         </div>
       </div>
     </section>
-  );
+  )
 }

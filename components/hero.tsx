@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Dock, Sparkles, Zap } from "lucide-react";
-import { HeroVideoDialogDemo } from "./HeroVideo";
-import Link from "next/link";
+import { Button } from '@/components/ui/button'
+import { Dock, Sparkles } from 'lucide-react'
+import { HeroVideoDialogDemo } from './HeroVideo'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -14,14 +14,12 @@ export function Hero() {
           </div>
 
           <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Launch Your Professional Website in{" "}
-            <span className="text-primary">Minutes</span>
+            Launch Your Professional Website in <span className="text-primary">Minutes</span>
           </h1>
 
           <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-            Sencill AI creates stunning, fully-functional websites for travel
-            agencies, hotels, and businesses. No coding required. Just describe
-            your vision, and watch it come to life.
+            Sencill AI creates stunning, fully-functional websites for travel agencies, hotels, and
+            businesses. No coding required. Just describe your vision, and watch it come to life.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -63,5 +61,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

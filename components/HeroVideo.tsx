@@ -1,4 +1,4 @@
-import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
+import { HeroVideoDialog } from '@/components/ui/hero-video-dialog'
 
 export function HeroVideoDialogDemo() {
   return (
@@ -18,5 +18,5 @@ export function HeroVideoDialogDemo() {
         thumbnailAlt="Hero Video"
       />
     </div>
-  );
+  )
 }

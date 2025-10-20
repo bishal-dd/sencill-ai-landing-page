@@ -1,7 +1,7 @@
-import { Header } from "@/components/header";
-import { EarlyAccessForm } from "@/components/early-access-form";
-import { Footer } from "@/components/footer";
-import { Sparkles } from "lucide-react";
+import { Header } from '@/components/header'
+import { EarlyAccessForm } from '@/components/early-access-form'
+import { Footer } from '@/components/footer'
+import { Sparkles } from 'lucide-react'
 
 export default function EarlyAccessPage() {
   return (
@@ -17,32 +17,24 @@ export default function EarlyAccessPage() {
               </div>
 
               <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-                Join the <span className="text-primary">Future</span> of Website
-                Creation
+                Join the <span className="text-primary">Future</span> of Website Creation
               </h1>
 
               <p className="text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl mb-8">
-                Be among the first to experience sencill AI. Get exclusive early
-                access, special pricing, and help shape the future of our
-                platform.
+                Be among the first to experience sencill AI. Get exclusive early access, special
+                pricing, and help shape the future of our platform.
               </p>
             </div>
 
             <EarlyAccessForm />
 
             <div className="mt-12 text-center">
-              <h3 className="text-lg font-semibold text-foreground mb-4">
-                What You'll Get
-              </h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4">What You&apos;ll Get</h3>
               <div className="grid gap-4 md:grid-cols-3 text-sm text-muted-foreground">
                 <div className="p-4 rounded-lg bg-card border border-border">
                   <div className="text-2xl mb-2">🎁</div>
-                  <p className="font-medium text-foreground">
-                    Special Launch Pricing
-                  </p>
-                  <p className="text-xs mt-1">
-                    Exclusive discounts for early adopters
-                  </p>
+                  <p className="font-medium text-foreground">Special Launch Pricing</p>
+                  <p className="text-xs mt-1">Exclusive discounts for early adopters</p>
                 </div>
                 <div className="p-4 rounded-lg bg-card border border-border">
                   <div className="text-2xl mb-2">⚡</div>
@@ -52,9 +44,7 @@ export default function EarlyAccessPage() {
                 <div className="p-4 rounded-lg bg-card border border-border">
                   <div className="text-2xl mb-2">💬</div>
                   <p className="font-medium text-foreground">Direct Support</p>
-                  <p className="text-xs mt-1">
-                    Get help from our founding team
-                  </p>
+                  <p className="text-xs mt-1">Get help from our founding team</p>
                 </div>
               </div>
             </div>
@@ -63,5 +53,5 @@ export default function EarlyAccessPage() {
       </section>
       <Footer />
     </main>
-  );
+  )
 }

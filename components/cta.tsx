@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export function CTA() {
   return (
@@ -11,8 +10,8 @@ export function CTA() {
             Ready to Launch Your Dream Website?
           </h2>
           <p className="text-pretty text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-            Join businesses who chose Sencill AI to create their perfect online
-            presence. Apply for early access today.
+            Join businesses who chose Sencill AI to create their perfect online presence. Apply for
+            early access today.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
@@ -38,5 +37,5 @@ export function CTA() {
         </div>
       </div>
     </section>
-  );
+  )
 }

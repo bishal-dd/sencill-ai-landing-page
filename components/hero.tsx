@@ -14,7 +14,24 @@ export function Hero() {
           </div>
 
           <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Launch Your Professional Website in <span className="text-primary">Minutes</span>
+            Launch Your Professional Website in{' '}
+            <span className="text-primary relative">
+              Minutes
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                viewBox="0 0 200 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 9C50 3 150 3 198 9"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  className="text-primary/40"
+                />
+              </svg>
+            </span>
           </h1>
 
           <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">

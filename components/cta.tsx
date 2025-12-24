@@ -18,8 +18,8 @@ export function CTA() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold px-8"
             >
-              <Link href="/early-access">
-                Apply Now
+              <Link href="https://app.sencillai.com">
+                Get Started
                 {/*<ArrowRight className="ml-2 h-5 w-5" />*/}
               </Link>
             </Button>

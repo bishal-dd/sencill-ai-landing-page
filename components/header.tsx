@@ -111,10 +111,16 @@ export function Header() {
                 >
                   <Link href={'/early-access'}>Early Access</Link>
                 </Button>*/}
-                <Button variant="ghost" className="w-full">
+                <Button
+                  variant="ghost"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
+                >
                   <Link href={'https://app.sencillai.com/auth/login'}>Sign In</Link>
                 </Button>
-                <Button variant="ghost" className="w-full">
+                <Button
+                  variant="ghost"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
+                >
                   <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
                 </Button>
               </div>

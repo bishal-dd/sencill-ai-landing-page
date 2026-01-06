@@ -51,15 +51,15 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             {/*<Button variant="ghost">Sign In</Button>*/}
-            {/*<Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <Link href={'/early-access'}>Early Access</Link>
-            </Button>*/}
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Link href={'/early-access'}>Early Access</Link>
+            </Button>
+            {/*<Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link href={'https://app.sencillai.com/auth/login'}>Sign In</Link>
             </Button>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
-            </Button>
+            </Button>*/}
           </div>
 
           {/* Mobile Menu Button */}
@@ -105,13 +105,13 @@ export function Header() {
                 Pricing
               </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                {/*<Button
+                <Button
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                   asChild
                 >
                   <Link href={'/early-access'}>Early Access</Link>
-                </Button>*/}
-                <Button
+                </Button>
+                {/*<Button
                   variant="ghost"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                 >
@@ -122,7 +122,7 @@ export function Header() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                 >
                   <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
-                </Button>
+                </Button>*/}
               </div>
             </div>
           </div>

@@ -54,9 +54,9 @@ export function Hero() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-base font-semibold px-8"
               asChild
             >
-              <Link href="/early-access">
+              <Link href="https://app.sencillai.com/auth/login">
                 <Dock className="mr-2 h-5 w-5" />
-                Apply For Early Access
+                Get Started
               </Link>
             </Button>
           </div>

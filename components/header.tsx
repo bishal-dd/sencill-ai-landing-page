@@ -51,10 +51,10 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <Link href={'https://app.sencillai.com/auth/login'}>Sign In</Link>
+              <a href={'https://app.sencillai.com/auth/login'}>Sign In</a>
             </Button>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
+              <a href={'https://app.sencillai.com/auth/signup'}>Sign Up</a>
             </Button>
           </div>
 

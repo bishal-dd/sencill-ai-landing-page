@@ -102,12 +102,6 @@ export function Header() {
               </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
-                  asChild
-                >
-                  <Link href={'/early-access'}>Early Access</Link>
-                </Button>
-                {/*<Button
                   variant="ghost"
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                 >
@@ -118,7 +112,7 @@ export function Header() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
                 >
                   <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
-                </Button>*/}
+                </Button>
               </div>
             </div>
           </div>

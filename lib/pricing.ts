@@ -2,7 +2,7 @@ export const PRICING = {
   BT: [
     {
       name: 'Website Generation',
-      price: 7000,
+      price: 4000,
       period: 'one-time',
       description: 'Professional website development tailored to your business',
       features: [
@@ -21,7 +21,7 @@ export const PRICING = {
     },
     {
       name: 'Hosting',
-      price: 3000,
+      price: 1000,
       period: 'year',
       description: 'Reliable and secure hosting',
       features: [
@@ -37,7 +37,7 @@ export const PRICING = {
   INTL: [
     {
       name: 'Website Generation',
-      price: 77, // USD
+      price: 50, // USD
       period: 'one-time',
       description: 'Professional website development tailored to your business',
       features: [
@@ -56,7 +56,7 @@ export const PRICING = {
     },
     {
       name: 'Hosting',
-      price: 49,
+      price: 20,
       period: 'year',
       description: 'Reliable and secure hosting',
       features: [

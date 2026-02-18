@@ -55,11 +55,11 @@ export function Pricing() {
         <div className="text-center mt-12 space-y-4">
           <div className="inline-block bg-muted px-6 py-4 rounded-lg">
             <p className="text-lg font-semibold mb-2">Total First Year Cost</p>
-            <p className="text-3xl font-bold text-primary">{isBhutan ? 'Nu. 11,500' : 'USD 115'}</p>
+            <p className="text-3xl font-bold text-primary">{isBhutan ? 'Nu. 6,500' : 'USD 85'}</p>
             <p className="text-sm text-muted-foreground mt-1">Development + Domain + Hosting</p>
           </div>
           <p className="text-muted-foreground">
-            Renewal cost: {isBhutan ? 'Nu. 4,500' : 'USD 45'}/year (Domain + Hosting only)
+            Renewal cost: {isBhutan ? 'Nu. 2,500' : 'USD 35'}/year (Domain + Hosting only)
           </p>
           {/*<Button size="lg" className="bg-primary hover:bg-primary/90 mt-4">
             Get Started Today

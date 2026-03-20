@@ -5,6 +5,7 @@ import { CTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Pricing } from '@/components/pricing'
+import { SiteShowcase } from '@/components/site-showcase'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Features />
       <HowItWorks />
+      <SiteShowcase />
       <Pricing />
       {/*<Testimonials />*/}
       <CTA />

@@ -6,7 +6,6 @@ import { motion, useInView, useMotionValue, useSpring, useTransform } from 'fram
 const STATS_DATA = [
   { label: 'Websites Generated', value: 135, suffix: '+' },
   { label: 'Countries Reached', value: 15, suffix: '+' },
-  { label: 'Avg. Build Time', value: 8, suffix: 'min' },
 ]
 
 function NumberTicker({ value }: { value: number }) {

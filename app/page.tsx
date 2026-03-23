@@ -5,12 +5,14 @@ import { CTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Pricing } from '@/components/pricing'
+import { StatsBanner } from '@/components/statsCard'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <StatsBanner />
       <Features />
       <HowItWorks />
       <Pricing />

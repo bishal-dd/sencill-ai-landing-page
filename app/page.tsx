@@ -6,12 +6,14 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Pricing } from '@/components/pricing'
 import { SiteShowcase } from '@/components/site-showcase'
+import { StatsBanner } from '@/components/statsCard'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <StatsBanner />
       <Features />
       <SiteShowcase />
       <HowItWorks />

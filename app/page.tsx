@@ -5,6 +5,7 @@ import { CTA } from '@/components/cta'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Pricing } from '@/components/pricing'
+import { SiteShowcase } from '@/components/site-showcase'
 import { StatsBanner } from '@/components/statsCard'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <StatsBanner />
       <Features />
+      <SiteShowcase />
       <HowItWorks />
       <Pricing />
       {/*<Testimonials />*/}

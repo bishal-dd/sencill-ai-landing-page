@@ -6,20 +6,20 @@ import { ExternalLink } from 'lucide-react'
 
 const samples = [
   {
-    title: 'Portfolio Template',
-    category: 'Personal',
+    title: 'Travel Agency Website',
+    category: 'Travel',
     image: '/sample1.png',
     link: 'https://newgentravel.online/',
   },
   {
-    title: 'E-commerce Store',
-    category: 'Business',
+    title: 'Hotel Website',
+    category: 'Hospitality',
     image: '/sample2.png',
     link: 'https://www.lightwebx.link/',
   },
   {
-    title: 'SaaS Landing Page',
-    category: 'Tech',
+    title: 'Small Business Landing Page',
+    category: 'Business',
     image: '/sample1.png',
     link: 'https://www.lightwebx.store/',
   },

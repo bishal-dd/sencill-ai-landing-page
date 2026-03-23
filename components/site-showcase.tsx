@@ -14,13 +14,13 @@ const samples = [
   {
     title: 'Hotel Website',
     category: 'Hospitality',
-    image: '/sample2.png',
+    image: '/hotelwebiste.webp',
     link: 'https://www.lightwebx.link/',
   },
   {
     title: 'Small Business Landing Page',
     category: 'Business',
-    image: '/sample1.png',
+    image: '/resturantwebsite.webp',
     link: 'https://www.lightwebx.store/',
   },
 ]
@@ -36,7 +36,7 @@ export function SiteShowcase() {
           </h2>
           <p className="text-zinc-600 max-w-2xl mx-auto text-lg">
             From professional portfolios to complex business sites, see what our AI can build in
-            seconds.
+            minutes.
           </p>
         </div>
 

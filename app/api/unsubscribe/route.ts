@@ -31,7 +31,7 @@ export async function GET(request: Request) {
         </head>
         <body style="margin:0; font-family:Arial; background:#fff8db; display:flex; align-items:center; justify-content:center; height:100vh;">
           <div style="background:#ffffff; padding:40px; border-radius:12px; text-align:center; max-width:400px;">
-            <h1 style="color:#111827;">✅ Unsubscribed</h1>
+            <h1 style="color:#111827;">You have Unsubscribed</h1>
             <p style="color:#6b7280;">
               You will no longer receive emails from <strong>Sencill AI</strong>.
             </p>

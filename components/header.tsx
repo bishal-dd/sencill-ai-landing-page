@@ -101,18 +101,22 @@ export function Header() {
                 Pricing
               </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button
-                  variant="ghost"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
-                >
-                  <Link href={'https://app.sencillai.com/auth/login'}>Sign In</Link>
-                </Button>
-                <Button
-                  variant="ghost"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
-                >
-                  <Link href={'https://app.sencillai.com/auth/signup'}>Sign Up</Link>
-                </Button>
+                <Link href={'https://app.sencillai.com/auth/login'}>
+                  <Button
+                    variant="ghost"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
+                  >
+                    Sign In
+                  </Button>
+                </Link>
+                <Link href={'https://app.sencillai.com/auth/signup'}>
+                  <Button
+                    variant="ghost"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 w-full"
+                  >
+                    Sign Up
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

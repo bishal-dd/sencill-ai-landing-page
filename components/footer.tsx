@@ -55,6 +55,22 @@ export function Footer() {
           </div>*/}
 
           <div>
+            <h4 className="font-semibold text-foreground mb-4">Legal</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>
+                <a href="/privacy-policy" className="hover:text-foreground transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/terms-and-conditions" className="hover:text-foreground transition-colors">
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-4">
               <a

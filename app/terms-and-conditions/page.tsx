@@ -53,8 +53,7 @@ export default function TermsAndConditions() {
             </p>
             <p>
               You are responsible for safeguarding the password that you use to access the Service
-              and for any activities or actions under your password. Dodopayments.com does not bear
-              any liability for the same.
+              and for any activities or actions under your password.
             </p>
             <p>
               You agree not to disclose your password to any third party. You must notify us

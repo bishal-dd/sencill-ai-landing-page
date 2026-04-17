@@ -21,7 +21,7 @@ const samples = [
     title: 'Small Business Landing Page',
     category: 'Business',
     image: '/resturantwebsite.webp',
-    link: 'https://www.lightwebx.store/',
+    link: 'https://www.waibaapp.com/',
   },
 ]
 

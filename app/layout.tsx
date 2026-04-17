@@ -5,6 +5,8 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 import { Suspense } from 'react'
 
+import '@/lib/posthog'
+
 export const metadata: Metadata = {
   title: 'Sencill AI - Launch Your Professional Website in Minutes',
   description:

@@ -31,7 +31,7 @@ export function Hero() {
 
           <p className="mb-8 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
             Sencill AI creates stunning, fully-functional websites for travel agencies, hotels, and
-            businesses. No coding required. Just describe your vision, and watch it come to life.
+            businesses. No coding required. Just follow the steps, and watch it come to life.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 const STATS_DATA = [
-  { label: 'Websites Generated', value: 185, suffix: '+' },
+  { label: 'Websites Generated', value: 232, suffix: '+' },
   { label: 'Countries Reached', value: 19, suffix: '+' },
 ]
 

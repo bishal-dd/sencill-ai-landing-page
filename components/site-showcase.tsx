@@ -15,13 +15,13 @@ const samples = [
     title: 'Hotel Website',
     category: 'Hospitality',
     image: '/hotelwebiste.webp',
-    link: 'https://www.lightwebx.link/',
+    link: 'https://lightwebx.link/',
   },
   {
     title: 'Small Business Landing Page',
     category: 'Business',
     image: '/resturantwebsite.webp',
-    link: 'https://www.waibaapp.com/',
+    link: 'https://lightwebx.store/',
   },
 ]
 

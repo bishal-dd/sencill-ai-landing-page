@@ -8,19 +8,19 @@ const samples = [
   {
     title: 'Travel Agency Website',
     category: 'Travel',
-    image: '/sample1.png',
+    image: '/travelwebsite.webp',
     link: 'https://newgentravel.online/',
   },
   {
     title: 'Hotel Website',
     category: 'Hospitality',
-    image: '/hotelwebiste.webp',
+    image: '/hotelwebsite.webp',
     link: 'https://lightwebx.link/',
   },
   {
     title: 'Small Business Landing Page',
     category: 'Business',
-    image: '/resturantwebsite.webp',
+    image: '/restaurantwebsite.webp',
     link: 'https://lightwebx.store/',
   },
 ]

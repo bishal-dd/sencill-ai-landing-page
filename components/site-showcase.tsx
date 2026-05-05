@@ -8,13 +8,13 @@ const samples = [
   {
     title: 'Travel Agency Website',
     category: 'Travel',
-    image: '/sample1.png',
+    image: '/travelagencywebsite.webp',
     link: 'https://newgentravel.online/',
   },
   {
-    title: 'Hotel Website',
-    category: 'Hospitality',
-    image: '/hotelwebiste.webp',
+    title: 'Portfolio Website',
+    category: 'Personal',
+    image: '/portfoliowebsite.webp',
     link: 'https://lightwebx.link/',
   },
   {

@@ -12,9 +12,9 @@ const samples = [
     link: 'https://newgentravel.online/',
   },
   {
-    title: 'Hotel Website',
-    category: 'Hospitality',
-    image: '/hotelwebsite.webp',
+    title: 'Personal Portfolio',
+    category: 'Creative & Professional',
+    image: '/portfoliowebsite.webp',
     link: 'https://lightwebx.link/',
   },
   {
